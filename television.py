@@ -16,6 +16,7 @@ class Television:
 
 
     def channel_down(self):
+
          if self.__status:
             if self.__channel > Television.MIN_VOLUME:
                 self.__channel -= 1
@@ -30,8 +31,7 @@ class Television:
 
     def volume_down(self):
         pass
-
-    def__str__(self):
+    def __str__(self):
         if self.__muted:
             return f'Volume = {Television.MIN_VOLUME}'
         else:
